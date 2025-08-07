@@ -1,0 +1,8 @@
+CREATE DATABASE cocoscan;
+USE cocoscan;
+CREATE TABLE scans (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    result VARCHAR(20),
+    confidence FLOAT,
+    scan_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

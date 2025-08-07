@@ -1,0 +1,54 @@
+<CocoScanLayout>:
+    orientation: "vertical"
+    padding: 20
+    spacing: 20
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1  # white background
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    Label:
+        text: "CocoScan"
+        font_size: 32
+        color: 0, 0.4, 0.2, 1
+        bold: True
+        size_hint_y: None
+        height: 50
+
+    Image:
+        id: leaf_image
+        source: "images/test_leaf.jpg"
+        allow_stretch: True
+        keep_ratio: True
+        size_hint_y: 0.6
+
+    Button:
+        text: "Scan Coconut Leaf"
+        font_size: 20
+        size_hint_y: None
+        height: 50
+        background_color: 0.2, 0.6, 0.2, 1
+        on_press: root.scan_image()
+
+    Label:
+        id: result_label
+        text: "Result will appear here"
+        font_size: 18
+        color: 0.1, 0.1, 0.1, 1
+        size_hint_y: None
+        height: 40
+
+    BoxLayout:
+        size_hint_y: None
+        height: 30
+        spacing: 10
+        Label:
+            text: "Developed by BSIT 4"
+            font_size: 14
+            color: 0.3, 0.3, 0.3, 1
+        Label:
+            text: "HCDC - July 2025"
+            font_size: 14
+            color: 0.3, 0.3, 0.3, 1
